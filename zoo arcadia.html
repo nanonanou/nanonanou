@@ -1,0 +1,130 @@
+zoo arcadia
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia Zoo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à Arcadia Zoo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#habitats">Habitats</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Présentation du Zoo</h2>
+        <p>Arcadia est un zoo situé en France près de la forêt de Brocéliande, en Bretagne, depuis 1960.</p>
+        <p>Ils possèdent tout un panel d'animaux, réparti par habitat (savane, jungle, marais) et font extrêmement attention à leurs santés.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>Restauration</li>
+            <li>Visite des habitats avec un guide</li>
+            <li>Visite du zoo en petit train</li>
+        </ul>
+    </section>
+
+    <section id="habitats">
+        <h2>Nos Habitats</h2>
+        <div id="savane" class="habitat">
+            <h3>Savane</h3>
+            <p>Les animaux de la savane...</p>
+        </div>
+        <div id="jungle" class="habitat">
+            <h3>Jungle</h3>
+            <p>Les animaux de la jungle...</p>
+        </div>
+        <div id="marais" class="habitat">
+            <h3>Marais</h3>
+            <p>Les animaux du marais...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: contact@arcadiazoo.fr</p>
+        <p>Téléphone: 01 23 45 67 89</p>
+    </section>
+
+    <section id="login">
+        <h2>Connexion</h2>
+        <form>
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Connexion</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arcadia Zoo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.habitat {
+    margin-bottom: 1rem;
+}
+document.addEventListener('DOMContentLoaded', () => {
+    // JavaScript pour des interactions supplémentaires
+});
